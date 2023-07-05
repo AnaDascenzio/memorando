@@ -9,6 +9,7 @@ import { ListaTarefasComponent } from './lista-tarefas/lista-tarefas.component';
 import { CabecalhoComponent } from './componentes/cabecalho/cabecalho.component';
 import { RodapeComponent } from './componentes/rodape/rodape.component';
 import { MensagemComponent } from './componentes/mensagem/mensagem.component';
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MensagemComponent } from './componentes/mensagem/mensagem.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
