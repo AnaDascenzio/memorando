@@ -1,0 +1,23 @@
+.rodape {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 24px 0;
+  width: 100%;
+  position:relative;
+  margin-top: 24px;
+  background: #263238;
+  bottom: 0;
+}
+
+footer {
+  text-align: center;
+  font-size: 18px;
+  color: #EBEBEB;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  bottom: 0;
+  padding-bottom: 0;
+}

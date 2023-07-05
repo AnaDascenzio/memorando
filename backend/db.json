@@ -1,0 +1,39 @@
+{
+  "tarefas": [
+    {
+      "id": 1,
+      "descricao": "Ir ao supermercado",
+      "categoria": "Casa",
+      "statusFinalizado": true,
+      "prioridade": "Baixa"
+    },
+    {
+      "id": 2,
+      "descricao": "Estudar sobre acessibilidade",
+      "categoria": "Trabalho",
+      "statusFinalizado": false,
+      "prioridade": "Normal"
+    },
+    {
+      "id": 4,
+      "descricao": "Preencher formulário de inscrição",
+      "categoria": "Estudos",
+      "statusFinalizado": false,
+      "prioridade": "Normal"
+    },
+    {
+      "id": 5,
+      "descricao": "Trocar lâmpada",
+      "categoria": "Casa",
+      "statusFinalizado": true,
+      "prioridade": "Alta"
+    },
+    {
+      "id": 6,
+      "descricao": "Ler",
+      "statusFinalizado": false,
+      "categoria": "Estudos",
+      "prioridade": "Alta"
+    }
+  ]
+}

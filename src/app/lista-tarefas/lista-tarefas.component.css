@@ -1,0 +1,377 @@
+.lista-tarefas {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  justify-content: center;
+  text-align: center;
+  margin-right: 25%;
+  margin-left: 25%;
+  border-radius: 8px;
+}
+
+.card-Estudos {
+  background: #F9F0FF;
+  border: 2px solid #B2B6FF;
+}
+
+.card-Trabalho {
+  background: #E9F7FF;
+  border: 2px solid #B2B6FF;
+}
+
+.card-Casa {
+  background: #E7E8FF;
+  border: 2px solid #B2B6FF;
+}
+
+.card-Feito {
+  text-decoration: line-through;
+}
+
+.listagem-tarefas {
+  min-height: 80vh;
+}
+
+.listagem-tarefas h2{
+  font-size: 32px;
+  font-family: 'Prompt';
+  font-weight: 400;
+  line-height: 48px;
+}
+
+.ilustracao {
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 32px;
+  margin-right: 88px;
+  margin-left: 40px;
+}
+
+button {
+  border-style: solid;
+  border-color: rgb(175, 193, 207);
+  background-color: rgba(245, 245, 245, 0.871);
+  border-radius: 8px;
+  margin-right: 10px;
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 16px;
+  border: none;
+  width: max-content;
+}
+
+.botao-criar{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.botao-criar button {
+  background: #263238;
+  border-radius: 8px;
+  color:#FFFFFF;
+  font-family: 'Prompt';
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 16px;
+  line-height: 24px;
+}
+
+.botoes-form {
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+}
+
+.botao-form {
+  font-family: 'Prompt';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  width: 94px;
+  height: 40px;
+  margin-bottom: 0;
+}
+
+.botao-salvar {
+  background: #63B77C;
+}
+
+.botao-cancelar {
+  background: #F89185;
+}
+
+.botao-desabilitado {
+  background: #6C757D;
+  cursor: default;
+}
+
+.botao-editar, .botao-deletar {
+  padding: 0;
+  margin: 4px 0;
+}
+
+.botao-editar {
+  margin-right: 16px;
+}
+
+.botoes-card {
+  display: inline-flex;
+  margin-right: 12px;
+}
+
+.input-invalido {
+  border-color: red!important;
+  margin-bottom: 0!important;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FFE4D6;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 8px;
+  padding: 24px;
+  margin-right: 25%;
+  margin-left: 25%;
+  margin-bottom: 32px;
+}
+
+input {
+  font-weight: 400;
+}
+
+.form-tarefa {
+  font-family: 'Prompt';
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  background: #FFFFFF;
+  border: 1px solid #7b6c7d;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  height: 40px;
+  padding-left: 8px;
+  text-decoration: none;
+}
+
+option:disabled {
+  color: #6C757D;
+}
+
+.formulario label {
+  padding-bottom: 4px;
+}
+
+select:focus, input:focus {
+  outline: 0;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: last baseline;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.botoes-card button{
+  background-color: inherit;
+}
+
+.card-descricao {
+  grid-area: "card-descricao";
+  font-size: 21px;
+  font-weight: 600;
+  color: #263238;
+  line-height: 24px;
+  margin-left: 16px;
+  margin-right: 16px;
+  text-align: left;
+  word-break: break-word;
+  max-width: 70%;
+  margin-top: 0;
+}
+
+.status-tarefa {
+  grid-area: "status";
+  grid-column: span 3;
+  border-radius: 8px;
+  font-size: 16px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 40px;
+  font-family: 'Prompt';
+  color: #263238;
+}
+
+.status-tarefa button {
+  cursor: pointer;
+  margin-top: 55px;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #6C757D;
+}
+
+.status-tarefa button:hover {
+  border-color: #84D39B;
+}
+
+.prioridade-tarefa {
+  grid-area: "prioridade";
+  margin-left: 8px;
+  margin-top: 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  font-family: 'Prompt';
+  color: #263238;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.prioridade-Alta {
+  background: #F7A9A0;
+}
+
+.prioridade-Normal {
+  background: #FFD67F;
+}
+
+.prioridade-Baixa {
+  background: #ABE5BC;
+}
+
+.categoria-tarefa {
+  grid-area: "categoria";
+  margin-left: 8px;
+  margin-top: 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  font-family: 'Prompt';
+  color: #263238;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.categoria-tarefa img {
+  padding-right: 8px;
+}
+
+.info-card {
+  display:grid;
+  grid-template-columns: min-content min-content repeat(3, 1fr);
+  grid-template-areas:
+    "categoria prioridade status"
+    "descricao";
+  margin-left: 8px;
+  box-sizing: border-box;
+}
+
+.icone-unchecked{
+  background: transparent;
+}
+
+.icone-checked{
+  background-image: url("/assets/icones/check-Feito.png");
+  border: none !important;
+}
+
+.categoria-Casa {
+  background: #B2B6FF;
+}
+
+.categoria-Estudos {
+  background: #D499FF;
+}
+
+.categoria-Trabalho {
+  background: #8AD4FF;
+}
+
+.ng-template {
+  text-align: center;
+  margin-top: 48px;
+  margin-top: 96px;
+}
+
+input::placeholder {
+  color:#000000
+}
+
+@media (max-width: 890px) {
+  .ilustracao {
+    display: flex;
+    flex-direction:column;
+  }
+
+  .ilustracao h2 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .info-card {
+    display: flex;
+    flex-direction:column;
+    width: min-content;
+    margin-left: 0;
+  }
+
+  .prioridade-tarefa, .categoria-tarefa {
+    margin-left: 0;
+  }
+
+  .lista-tarefas {
+    display: flex;
+    align-items: center;
+  }
+
+  .criar-tarefa button {
+    margin-top: 32px;
+  }
+
+  .card-descricao {
+    margin-top: 30px;
+  }
+
+  .icone-checked, .icone-unchecked {
+    margin-right: 25%;
+  }
+}
+
+@media (max-width: 504px) {
+  .botoes-form {
+    flex-direction: column;
+  }
+}

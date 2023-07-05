@@ -1,0 +1,18 @@
+.cabecalho {
+  margin-bottom: 24px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("/assets/imagens/fundo-cabecalho.png");
+}
+
+.titulo {
+  margin-top: 48px;
+  font-family: 'Prompt';
+  font-style: normal;
+  font-size: 48px;
+  text-align: center;
+  color: #000000;
+  font-weight: 400;
+  line-height: 73px;
+}
