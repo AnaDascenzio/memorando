@@ -4,7 +4,7 @@
       Criar nova tarefa
     </button>
   </div>
-  <form class="formulario ff-prompt"
+  <form [@showState]="formAberto ? 'show' : 'notShow '" class="formulario ff-prompt"
     [formGroup]="formulario"
     *ngIf="formAberto">
     <label for="descricao">Descrição da tarefa</label>
