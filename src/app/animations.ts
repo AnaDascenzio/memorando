@@ -18,10 +18,8 @@ state('highlighted', style({
   ])
 
 export const showStateTrigger = trigger ('showState', [
-    state('show', style({
 
-    })),
-    transition('void  => show', [
+    transition(':enter', [
         style({
             opacity: 0
         }),
@@ -29,9 +27,18 @@ export const showStateTrigger = trigger ('showState', [
             opacity: 1
         }))
     ]),
-    transition('show => void',[
+    transition(':leave',[
         animate(300, style({
             opacity: 0
         }))
     ])
 ])
+
+export const scaleStateTrigger = trigger ('scaleState', [
+
+    transition('* => checked', [
+        animate('400ms ease-in', style({
+          transform: 'scale(0.4)'
+        }))
+      ])
+    ])

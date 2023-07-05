@@ -4,7 +4,7 @@
       Criar nova tarefa
     </button>
   </div>
-  <form [@showState]="formAberto ? 'show' : 'notShow '" class="formulario ff-prompt"
+  <form @showState class="formulario ff-prompt"
     [formGroup]="formulario"
     *ngIf="formAberto">
     <label for="descricao">Descrição da tarefa</label>
@@ -87,7 +87,9 @@
         <p class="status-tarefa">
           <button
             [ngClass]="(tarefa.statusFinalizado == true) ? 'icone-checked' : 'icone-unchecked'"
-            (click)="finalizarTarefa(tarefa.id);">
+            (click)="finalizarTarefa(tarefa.id);"
+            [@scaleState]="(tarefa.id === id? 'checked': 'unchecked')"
+            >
           </button>
         </p>
       </div>
